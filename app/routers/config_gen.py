@@ -7,7 +7,7 @@ import logging
 router = APIRouter()
 
 @router.post("/generate")
-def generate_script(config: dict):
+def generate(config: dict):
     logging.info("Received configuration for script generation.")
     script = generate_script(config)
     logging.info("Script generation completed.")
