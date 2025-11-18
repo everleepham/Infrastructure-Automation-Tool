@@ -4,7 +4,7 @@ import redis
 
 load_dotenv()
 
-REDIS_URI = os.getenv('REDIS_URI', 'redis://localhost:6379/')
+REDIS_URI = os.getenv('REDIS_URI', 'redis://localhost:6379/0')
 
 try:
     redis_client = redis.from_url(REDIS_URI)
